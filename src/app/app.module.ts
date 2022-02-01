@@ -1,3 +1,4 @@
+import { PassengerDashboardModule } from './modules/passenger-dashboard/passenger-dashboard.module';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,7 +13,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+
+    // custom modules
+    PassengerDashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
