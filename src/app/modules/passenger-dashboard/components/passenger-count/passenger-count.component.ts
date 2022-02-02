@@ -1,15 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Passenger } from '../../models';
 
 @Component({
   selector: 'app-passenger-count',
   templateUrl: './passenger-count.component.html',
   styleUrls: ['./passenger-count.component.scss']
 })
-export class PassengerCountComponent implements OnInit {
+export class PassengerCountComponent {
 
-  constructor() { }
+  @Input() public items: Passenger[] = [];
 
-  ngOnInit(): void {
+  checkedInCount(): number | undefined {
+    if (!this.items) {
+      return;
+    }
+    return this.items.filter((passenger: Passenger) => passenger.checkedIn).length;
   }
 
 }
