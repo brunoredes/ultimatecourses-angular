@@ -16,7 +16,7 @@ export class PassengerDashboardComponent implements OnInit {
   constructor(private passengerService: PassengerDashboardService) { }
 
   ngOnInit(): void {
-    this.passengers = passengersMock;
+    this.passengers = this.passengerService.getPassengers();
   }
 
   handleRemove(event: Passenger): void {
