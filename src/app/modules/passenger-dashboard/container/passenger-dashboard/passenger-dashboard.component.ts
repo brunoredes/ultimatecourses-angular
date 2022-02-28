@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { passengersMock } from 'src/app/mocks';
 import { Passenger } from '../../models';
+import { PassengerDashboardService } from './../../passenger-dashboard.service';
 
 
 @Component({
@@ -11,35 +13,13 @@ export class PassengerDashboardComponent implements OnInit {
 
   passengers: Passenger[] = [];
 
-  constructor() { }
+  constructor(private passengerService: PassengerDashboardService) { }
 
   ngOnInit(): void {
-    this.passengers = [
-      {
-        id: 1, fullname: 'Stephen', checkedIn: true, checkInDate: 1491606000000, children: [
-
-        ]
-      },
-      {
-        id: 2, fullname: 'Rose', checkedIn: false, checkInDate: null, children: [
-          { name: '', age: 1 }
-        ]
-      },
-      { id: 3, fullname: 'James', checkedIn: true, checkInDate: 1491606000000, children: null },
-      {
-        id: 4, fullname: 'Rahela', checkedIn: false, checkInDate: null, children: [
-          { name: '', age: 1 }
-        ]
-      },
-      {
-        id: 5, fullname: 'Adama', checkedIn: true, checkInDate: 1491606000000, children: [
-          { name: '', age: 1 }
-        ]
-      }
-    ];
+    this.passengers = passengersMock;
   }
 
-  handleRemove(event): void {
+  handleRemove(event: Passenger): void {
     this.passengers = this.passengers.filter((passenger: Passenger) => passenger.id !== event.id);
 
   }
@@ -51,6 +31,5 @@ export class PassengerDashboardComponent implements OnInit {
       }
       return passenger;
     });
-    console.log(this.passengers); 
   }
 }
