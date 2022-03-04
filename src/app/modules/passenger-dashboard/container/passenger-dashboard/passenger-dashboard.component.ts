@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { passengersMock } from 'src/app/mocks';
 import { Passenger } from '../../models';
 import { PassengerDashboardService } from './../../passenger-dashboard.service';
 
