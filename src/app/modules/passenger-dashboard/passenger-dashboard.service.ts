@@ -1,16 +1,18 @@
-import { PassengerDashboardModule } from './passenger-dashboard.module';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { passengersMock } from 'src/app/mocks';
-import { Passenger } from './models';
+import { map, Observable } from 'rxjs';
+import { Passengers } from './models/passenger.interface';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PassengerDashboardService {
+  private readonly url = 'http://localhost:3000/passengers';
+  constructor(private http: HttpClient) {}
 
-  constructor() { }
-
-  getPassengers(): Passenger[] {
-    return passengersMock;
+  getPassengers(): Observable<Passengers> {
+    return this.http
+      .get<Passengers>(this.url)
+      .pipe(map((response) => response));
   }
 }

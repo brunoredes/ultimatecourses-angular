@@ -1,26 +1,28 @@
+import { Passengers } from './../../models/passenger.interface';
 import { Component, OnInit } from '@angular/core';
 import { Passenger } from '../../models';
 import { PassengerDashboardService } from './../../passenger-dashboard.service';
 
-
 @Component({
   selector: 'app-passenger-dashboard',
   templateUrl: './passenger-dashboard.component.html',
-  styleUrls: ['./passenger-dashboard.component.scss']
+  styleUrls: ['./passenger-dashboard.component.scss'],
 })
 export class PassengerDashboardComponent implements OnInit {
+  passengers!: Passengers;
 
-  passengers: Passenger[] = [];
-
-  constructor(private passengerService: PassengerDashboardService) { }
+  constructor(private passengerService: PassengerDashboardService) {}
 
   ngOnInit(): void {
-    this.passengers = this.passengerService.getPassengers();
+    this.passengerService
+      .getPassengers()
+      .subscribe((data: Passengers) => (this.passengers = data));
   }
 
   handleRemove(event: Passenger): void {
-    this.passengers = this.passengers.filter((passenger: Passenger) => passenger.id !== event.id);
-
+    this.passengers = this.passengers.filter(
+      (passenger: Passenger) => passenger.id !== event.id
+    );
   }
 
   handleEdit(event: Passenger) {
