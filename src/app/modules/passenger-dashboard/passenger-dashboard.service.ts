@@ -1,7 +1,7 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { Passengers } from './models/passenger.interface';
+import { Passengers, Passenger } from './models/passenger.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -10,9 +10,29 @@ export class PassengerDashboardService {
   private readonly url = 'http://localhost:3000/passengers';
   constructor(private http: HttpClient) {}
 
-  getPassengers(): Observable<Passengers> {
+  public getPassengers(): Observable<Passengers> {
     return this.http
-      .get<Passengers>(this.url)
+      .get<Passengers>(this.url, { headers: this.getHeaders() })
       .pipe(map((response) => response));
+  }
+
+  public updatePassengers(passenger: Passenger): Observable<Passenger> {
+    return this.http
+      .put<Passenger>(`${this.url}/${passenger.id}`, passenger, {
+        headers: this.getHeaders(),
+      })
+      .pipe(map((response) => response));
+  }
+
+  public removePassengers(passenger: Passenger): Observable<Passenger> {
+    return this.http
+      .delete<Passenger>(`${this.url}/${passenger.id}`, {
+        headers: this.getHeaders(),
+      })
+      .pipe(map((response) => response));
+  }
+
+  private getHeaders() {
+    return new HttpHeaders().append('Content-Type', 'application/json');
   }
 }
