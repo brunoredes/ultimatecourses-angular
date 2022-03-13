@@ -10,6 +10,8 @@
 //         background-color: #2ecc71;
 //     }
 // }
-:host {
-    display: flex;
+.wrapper {
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-evenly;
 }

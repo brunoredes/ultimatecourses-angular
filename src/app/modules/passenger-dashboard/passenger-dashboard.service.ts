@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { catchError, map, Observable, of, throwError } from 'rxjs';
 import { Passengers, Passenger } from './models/passenger.interface';
 
 @Injectable({
@@ -13,7 +13,10 @@ export class PassengerDashboardService {
   public getPassengers(): Observable<Passengers> {
     return this.http
       .get<Passengers>(this.url, { headers: this.getHeaders() })
-      .pipe(map((response) => response));
+      .pipe(
+        map((response) => response),
+        catchError((error) => throwError(() => new Error(error)))
+      );
   }
 
   public updatePassengers(passenger: Passenger): Observable<Passenger> {

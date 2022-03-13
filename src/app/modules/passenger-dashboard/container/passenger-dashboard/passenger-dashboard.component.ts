@@ -14,9 +14,13 @@ export class PassengerDashboardComponent implements OnInit {
   constructor(private passengerService: PassengerDashboardService) {}
 
   ngOnInit(): void {
-    this.passengerService
-      .getPassengers()
-      .subscribe((data: Passengers) => (this.passengers = data));
+    this.passengerService.getPassengers().subscribe(
+      (data: Passengers) => (this.passengers = data),
+      (error) => console.error(error),
+      () => {
+        console.log('completed');
+      }
+    );
   }
 
   handleRemove(event: Passenger): void {
