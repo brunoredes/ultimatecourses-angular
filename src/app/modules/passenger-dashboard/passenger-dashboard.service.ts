@@ -19,6 +19,15 @@ export class PassengerDashboardService {
       );
   }
 
+  public getPassenger(id: number): Observable<Passenger> {
+    return this.http
+      .get<Passenger>(`${this.url}/${id}`, { headers: this.getHeaders() })
+      .pipe(
+        map((response) => response),
+        catchError((error) => throwError(() => new Error(error)))
+      );
+  }
+
   public updatePassengers(passenger: Passenger): Observable<Passenger> {
     return this.http
       .put<Passenger>(`${this.url}/${passenger.id}`, passenger, {
