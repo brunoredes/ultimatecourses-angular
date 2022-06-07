@@ -14,8 +14,10 @@ export class PassengerDashboardService {
     return this.http
       .get<Passengers>(this.url, { headers: this.getHeaders() })
       .pipe(
-        map((response) => response),
-        catchError((error) => throwError(() => new Error(error)))
+        map((response:Passengers) => response),
+        catchError((error: string) =>
+          throwError(() => new Error(error))
+        )
       );
   }
 
