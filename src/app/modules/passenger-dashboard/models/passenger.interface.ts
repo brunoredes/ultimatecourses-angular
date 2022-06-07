@@ -3,12 +3,7 @@ export interface Passenger {
   fullname: string;
   checkedIn: boolean;
   checkInDate: number | null;
-  children: Child[] | null;
-}
-
-interface Child {
-  name: string;
-  age: number;
+  baggage: string
 }
 
 export type Passengers = Passenger[];

@@ -20,7 +20,7 @@ export class PassengerDetailComponent implements OnChanges {
     if (changes['detail']) {
       this.detail = { ...changes['detail'].currentValue };
     }
-    console.log(changes)
+    console.log(changes);
   }
 
   public nameChange(name: string): void {

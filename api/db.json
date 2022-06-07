@@ -1,354 +1,354 @@
 {
-    "data": [
+    "passengers": [
       {
         "id": 1,
         "fullname": "Julie West",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 2,
         "fullname": "Darin Ortiz V",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 3,
         "fullname": "Tomas Keebler I",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 4,
         "fullname": "Jacob Batz",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 5,
         "fullname": "Shari Cassin",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 6,
         "fullname": "Arthur O'Kon",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 7,
         "fullname": "Alfredo Ullrich",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 8,
         "fullname": "Paul Mills",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 9,
         "fullname": "Beatrice Armstrong",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 10,
         "fullname": "Steven D'Amore",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 11,
         "fullname": "Jeanne Hegmann",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 12,
         "fullname": "Damon Abbott",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 13,
         "fullname": "Veronica Little",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 14,
         "fullname": "Joanne Hoeger",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 15,
         "fullname": "Gwen McLaughlin",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 16,
         "fullname": "Jimmie Mann II",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 17,
         "fullname": "Louis Schneider",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 18,
         "fullname": "Carrie Herman",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 19,
         "fullname": "Melinda Lang",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 20,
         "fullname": "Tyrone Wunsch IV",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 21,
         "fullname": "Mrs. Wilbur Schowalter",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 22,
         "fullname": "Shirley Terry",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 23,
         "fullname": "Geneva Mraz",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 24,
         "fullname": "Patsy Bode",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 25,
         "fullname": "Lowell Wiza",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 26,
         "fullname": "Grant Effertz",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 27,
         "fullname": "Yvette Dach",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 28,
         "fullname": "Tracey Auer",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 29,
         "fullname": "Christopher Hackett DVM",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 30,
         "fullname": "Laurence Nikolaus",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 31,
         "fullname": "Phil MacGyver",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 32,
         "fullname": "Alfredo Ratke",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 33,
         "fullname": "Alfred Barton",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 34,
         "fullname": "Mrs. Jana Lang",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 35,
         "fullname": "Eduardo Tillman",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 36,
         "fullname": "Dr. Tonya O'Conner",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 37,
         "fullname": "Ms. Delia Cassin",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 38,
         "fullname": "Mack Christiansen DVM",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 39,
         "fullname": "Anne Murphy",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 40,
         "fullname": "Mildred Daniel",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 41,
         "fullname": "Kurt Hirthe",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 42,
         "fullname": "Beatrice Gutmann",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 43,
         "fullname": "Maurice Rosenbaum",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 44,
         "fullname": "Shannon Nader",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 45,
         "fullname": "Elmer Davis",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 46,
         "fullname": "Erik Dare",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 47,
         "fullname": "Andy Stracke",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 48,
         "fullname": "Anthony Upton",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 49,
         "fullname": "Enrique Wiza",
         "checkedIn": false,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       },
       {
         "id": 50,
         "fullname": "Irene Rohan",
         "checkedIn": true,
         "checkInDate": 1654571437550,
-        "children": null
+        "baggage": ""
       }
     ]
   }

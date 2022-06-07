@@ -8,16 +8,15 @@ import { Passengers, Passenger } from './models/passenger.interface';
 })
 export class PassengerDashboardService {
   private readonly url = 'http://localhost:3000/passengers';
+
   constructor(private http: HttpClient) {}
 
   public getPassengers(): Observable<Passengers> {
     return this.http
       .get<Passengers>(this.url, { headers: this.getHeaders() })
       .pipe(
-        map((response:Passengers) => response),
-        catchError((error: string) =>
-          throwError(() => new Error(error))
-        )
+        map((response: Passengers): Passengers => response),
+        catchError((error: string) => throwError(() => new Error(error)))
       );
   }
 

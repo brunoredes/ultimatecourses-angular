@@ -1,0 +1,13 @@
+<form #form="ngForm" novalidate>
+  <fieldset>
+    <legend>form</legend>
+    {{ detail | json }}
+    <div>
+        <input type="text" name="fullname" [ngModel]="detail?.fullname">
+    </div>
+
+    <div>
+        {{form.value | json}}
+    </div>
+  </fieldset>
+</form>
