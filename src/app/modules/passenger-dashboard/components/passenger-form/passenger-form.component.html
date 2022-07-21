@@ -3,11 +3,49 @@
     <legend>form</legend>
     {{ detail | json }}
     <div>
-        <input type="text" name="fullname" [ngModel]="detail?.fullname">
+      <label for="fullname">Passenger name</label>
+      <input
+        type="text"
+        name="fullname"
+        id="fullname"
+        [ngModel]="detail?.fullname"
+      />
+    </div>
+    <div>
+      <label for="id">Passenger ID:</label>
+      <input type="number" name="id" id="id" [ngModel]="detail?.fullname" />
     </div>
 
     <div>
-        {{form.value | json}}
+      <label for="checkedIn">
+        <input
+          type="radio"
+          name="checkedIn"
+          id="checkedIn"
+          [value]="true"
+          [ngModel]="detail?.checkedIn"
+          (ngModelChange)="toggleCheckIn($event)"
+        />
+        Yes
+      </label>
+      <label for="notChecked">
+        <input
+          type="radio"
+          name="checkedIn"
+          id="notCheckedIn"
+          [value]="false"
+          [ngModel]="detail?.checkedIn"
+          (ngModelChange)="toggleCheckIn($event)"
+        />
+        No
+      </label>
     </div>
+
+    <div *ngIf="form.value.checkedIn">
+      Check in date:
+      <input type="number" name="checkInDate" id="" [ngModel]="detail?.checkInDate">
+    </div>
+
+    {{ form.value | json }}
   </fieldset>
 </form>
