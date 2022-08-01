@@ -13,31 +13,18 @@
     </div>
     <div>
       <label for="id">Passenger ID:</label>
-      <input type="number" name="id" id="id" [ngModel]="detail?.fullname" />
+      <input type="number" name="id" id="id" [ngModel]="detail?.id" />
     </div>
 
     <div>
       <label for="checkedIn">
         <input
-          type="radio"
+          type="checkbox"
           name="checkedIn"
           id="checkedIn"
-          [value]="true"
           [ngModel]="detail?.checkedIn"
           (ngModelChange)="toggleCheckIn($event)"
         />
-        Yes
-      </label>
-      <label for="notChecked">
-        <input
-          type="radio"
-          name="checkedIn"
-          id="notCheckedIn"
-          [value]="false"
-          [ngModel]="detail?.checkedIn"
-          (ngModelChange)="toggleCheckIn($event)"
-        />
-        No
       </label>
     </div>
 
