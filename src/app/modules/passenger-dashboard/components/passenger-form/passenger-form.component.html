@@ -8,12 +8,27 @@
         type="text"
         name="fullname"
         id="fullname"
+        #fullname="ngModel"
         [ngModel]="detail?.fullname"
+        required
       />
+      <div *ngIf="fullname.errors?.['required'] && fullname.dirty" class="error">
+        Passenger name is required
+      </div>
     </div>
     <div>
       <label for="id">Passenger ID:</label>
-      <input type="number" name="id" id="id" [ngModel]="detail?.id" />
+      <input
+        type="number"
+        name="id"
+        id="id"
+        [ngModel]="detail?.id"
+        required
+        #id="ngModel"
+      />
+      <div *ngIf="id.errors?.['required'] && id.dirty" class="error">
+        id is required
+      </div>
     </div>
 
     <div>
@@ -46,15 +61,6 @@
           [value]="item.key"
           [selected]="item.key === detail?.baggage"
         >
-          {{ item.value }}
-        </option>
-      </select>
-      <select name="baggage" [ngModel]="detail?.baggage">
-        <option
-          *ngFor="let item of baggage"
-          [ngValue]="item.key"
-        >
-        <!--ngValue is the same thing of selected above-->
           {{ item.value }}
         </option>
       </select>
