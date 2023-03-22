@@ -1,3 +1,4 @@
+import { NotFoundComponent } from './not-found.component';
 import { HomeComponent } from './home.component';
 import { PassengerDashboardModule } from './modules/passenger-dashboard/passenger-dashboard.module';
 import { NgModule } from '@angular/core';
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
