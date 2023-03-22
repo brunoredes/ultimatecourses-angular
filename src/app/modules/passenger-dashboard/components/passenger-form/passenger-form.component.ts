@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Passenger, Baggage } from '../../models';
 
 @Component({
@@ -8,6 +8,8 @@ import { Passenger, Baggage } from '../../models';
 })
 export class PassengerFormComponent implements OnInit {
   @Input() public detail: Passenger;
+
+  @Output() update: EventEmitter<Passenger> = new EventEmitter<Passenger>()
   public baggage: Baggage[] = [
     {
       key: 'none',
@@ -34,6 +36,12 @@ export class PassengerFormComponent implements OnInit {
   public toggleCheckIn(checkedIn: boolean) {
     if (checkedIn) {
       this.detail.checkInDate = Date.now();
+    }
+  }
+
+  public handleSubmit(passenger: Passenger, isValid: boolean) {
+    if(isValid) {
+      this.update.emit(passenger);
     }
   }
 }

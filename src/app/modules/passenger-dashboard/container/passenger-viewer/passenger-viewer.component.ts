@@ -9,11 +9,20 @@ import { Passenger } from './../../models/passenger.interface';
 })
 export class PassengerViewerComponent implements OnInit {
   public passenger: Passenger;
-  constructor(private passengerService: PassengerDashboardService) {}
+  constructor(private passengerService: PassengerDashboardService) { }
 
   ngOnInit(): void {
     this.passengerService.getPassenger(1).subscribe((data: Passenger) => {
       this.passenger = data;
     });
+  }
+
+  public onUpdatePassenger(event: Passenger) {
+    this.passengerService.updatePassengers(event)
+      .subscribe({
+        next: data => {
+          this.passenger = { ...this.passenger, ...data };
+        }
+      });
   }
 }
