@@ -8,6 +8,10 @@ const routes: Routes = [
     path: '', component: HomeComponent, pathMatch: 'full'
   },
   {
+    path: 'passengers',
+    loadChildren: () => import('./modules/passenger-dashboard/passenger-dashboard.module').then(m => m.PassengerDashboardModule)
+  },
+  {
     path: '**', component: NotFoundComponent
   }
 ];

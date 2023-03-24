@@ -17,10 +17,10 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    // custom modules
+    // PassengerDashboardModule,
     FormsModule,
 
-    // custom modules
-    PassengerDashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

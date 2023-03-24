@@ -1,13 +1,6 @@
 {
   "passengers": [
     {
-      "fullname": "Tio robs",
-      "id": 1,
-      "checkedIn": true,
-      "baggage": "none",
-      "checkInDate": 1654571437550
-    },
-    {
       "id": 2,
       "fullname": "Darin Ortiz V",
       "checkedIn": true,
@@ -263,90 +256,6 @@
       "id": 38,
       "fullname": "Mack Christiansen DVM",
       "checkedIn": false,
-      "checkInDate": 1654571437550,
-      "baggage": ""
-    },
-    {
-      "id": 39,
-      "fullname": "Anne Murphy",
-      "checkedIn": false,
-      "checkInDate": 1654571437550,
-      "baggage": ""
-    },
-    {
-      "id": 40,
-      "fullname": "Mildred Daniel",
-      "checkedIn": false,
-      "checkInDate": 1654571437550,
-      "baggage": ""
-    },
-    {
-      "id": 41,
-      "fullname": "Kurt Hirthe",
-      "checkedIn": true,
-      "checkInDate": 1654571437550,
-      "baggage": ""
-    },
-    {
-      "id": 42,
-      "fullname": "Beatrice Gutmann",
-      "checkedIn": false,
-      "checkInDate": 1654571437550,
-      "baggage": ""
-    },
-    {
-      "id": 43,
-      "fullname": "Maurice Rosenbaum",
-      "checkedIn": false,
-      "checkInDate": 1654571437550,
-      "baggage": ""
-    },
-    {
-      "id": 44,
-      "fullname": "Shannon Nader",
-      "checkedIn": true,
-      "checkInDate": 1654571437550,
-      "baggage": ""
-    },
-    {
-      "id": 45,
-      "fullname": "Elmer Davis",
-      "checkedIn": true,
-      "checkInDate": 1654571437550,
-      "baggage": ""
-    },
-    {
-      "id": 46,
-      "fullname": "Erik Dare",
-      "checkedIn": false,
-      "checkInDate": 1654571437550,
-      "baggage": ""
-    },
-    {
-      "id": 47,
-      "fullname": "Andy Stracke",
-      "checkedIn": false,
-      "checkInDate": 1654571437550,
-      "baggage": ""
-    },
-    {
-      "id": 48,
-      "fullname": "Anthony Upton",
-      "checkedIn": false,
-      "checkInDate": 1654571437550,
-      "baggage": ""
-    },
-    {
-      "id": 49,
-      "fullname": "Enrique Wiza",
-      "checkedIn": false,
-      "checkInDate": 1654571437550,
-      "baggage": ""
-    },
-    {
-      "id": 50,
-      "fullname": "Irene Rohan",
-      "checkedIn": true,
       "checkInDate": 1654571437550,
       "baggage": ""
     }

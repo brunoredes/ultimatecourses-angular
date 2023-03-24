@@ -1,3 +1,4 @@
 <div>
+  <button type="button" (click)="goBack()" (keyup.space)="goBack()" aria-label="Go back" name="Button go back">&lsaquo; Go back</button>
   <app-passenger-form [detail]="passenger" (update)="onUpdatePassenger($event)"/>
 </div>

@@ -1,13 +1,15 @@
-import { FormsModule } from '@angular/forms';
-import { PassengerDashboardService } from './passenger-dashboard.service';
-import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { PassengerDashboardComponent } from './container/passenger-dashboard/passenger-dashboard.component';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { PassengerCountComponent } from './components/passenger-count/passenger-count.component';
 import { PassengerDetailComponent } from './components/passenger-detail/passenger-detail.component';
-import { PassengerViewerComponent } from './container/passenger-viewer/passenger-viewer.component';
 import { PassengerFormComponent } from './components/passenger-form/passenger-form.component';
+import { PassengerDashboardComponent } from './container/passenger-dashboard/passenger-dashboard.component';
+import { PassengerViewerComponent } from './container/passenger-viewer/passenger-viewer.component';
+import { PassengerDashboardRoutingModule } from './passenger-dashboard-routing.module';
+import { PassengerDashboardService } from './passenger-dashboard.service';
 
 @NgModule({
   declarations: [
@@ -18,8 +20,8 @@ import { PassengerFormComponent } from './components/passenger-form/passenger-fo
     PassengerDetailComponent,
     PassengerFormComponent,
   ],
-  imports: [CommonModule, HttpClientModule, FormsModule],
+  imports: [CommonModule, HttpClientModule, FormsModule, PassengerDashboardRoutingModule],
   exports: [PassengerViewerComponent],
   providers: [PassengerDashboardService],
 })
-export class PassengerDashboardModule {}
+export class PassengerDashboardModule { } 
